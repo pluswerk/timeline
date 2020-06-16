@@ -1,0 +1,55 @@
+.tx-timeline {
+  .clr::after {
+    content: '';
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+  }
+
+  .timeline {
+    margin-top: 50px;
+  }
+
+  .timeline__epochs {
+    margin-bottom: 50px;
+  }
+
+  .timeline__epoch {
+    position: relative;
+    height: 10px;
+    float: left;
+  }
+
+  .timeline__moments {
+    position: relative;
+  }
+
+  .timeline__moment {
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    height: 25px;
+    background: #000000;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+
+  .timeline__legend-color {
+    width: 50px;
+    height: 20px;
+    float: left;
+    margin-right: 20px;
+  }
+
+  .timeline__tooltip {
+    background-color: #000000;
+    color: white;
+    padding: 5px 10px;
+    display: none;
+
+    &[data-show] {
+      display: block;
+    }
+  }
+}

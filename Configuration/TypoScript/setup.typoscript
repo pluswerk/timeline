@@ -1,0 +1,10 @@
+plugin.tx_timeline {
+  view {
+    templateRootPath >
+    templateRootPaths.100 = {$plugin.tx_timeline.view.templateRootPath}
+    partialRootPath >
+    partialRootPaths.100 = {$plugin.tx_timeline.view.partialRootPath}
+    layoutRootPath >
+    layoutRootPaths.100 = {$plugin.tx_timeline.view.layoutRootPath}
+  }
+}

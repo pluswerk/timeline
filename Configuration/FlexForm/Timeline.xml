@@ -1,0 +1,30 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:timeline/Resources/Private/Language:locallang_db.xlf:flexform.title</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.timeline>
+                        <TCEforms>
+                            <label>LLL:EXT:timeline/Resources/Private/Language:locallang_db.xlf:flexform.title</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectMultipleSideBySide</renderType>
+                                <enableMultiSelectFilterTextfield>true</enableMultiSelectFilterTextfield>
+                                <foreign_table>tx_timeline_domain_model_timeline</foreign_table>
+                                <foreign_table_where>AND tx_timeline_domain_model_timeline.hidden = 0 AND tx_timeline_domain_model_timeline.deleted = 0</foreign_table_where>
+                                <maxitems>1</maxitems>
+                            </config>
+                        </TCEforms>
+                    </settings.timeline>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

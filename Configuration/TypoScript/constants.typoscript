@@ -1,0 +1,7 @@
+plugin.tx_timeline {
+  view {
+    templateRootPath = EXT:timeline/Resources/Private/Templates/
+    partialRootPath = EXT:timeline/Resources/Private/Partials/
+    layoutRootPath = EXT:timeline/Resources/Private/Layouts/
+  }
+}

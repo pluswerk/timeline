@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file target-language="de" datatype="plaintext" original="messages" product-name="tx-timeline">
+    <header/>
+    <body>
+      <trans-unit id="flexform.title">
+        <target>Zeitstrahlen</target>
+      </trans-unit>
+
+      <trans-unit id="pluginWizard.title">
+        <target>Zeitstrahl</target>
+      </trans-unit>
+      <trans-unit id="pluginWizard.description">
+        <target>Bindet einen oder mehrere Zeitstrahlen ein.</target>
+      </trans-unit>
+
+      <trans-unit id="timeline">
+        <target>Zeitpunkt</target>
+      </trans-unit>
+      <trans-unit id="timeline.title">
+        <target>Titel</target>
+      </trans-unit>
+      <trans-unit id="timeline.description">
+        <target>Beschreibung</target>
+      </trans-unit>
+      <trans-unit id="timeline.display_mode">
+        <target>Anzeigemodus</target>
+      </trans-unit>
+      <trans-unit id="timeline.display_mode.0">
+        <target>Wochen</target>
+      </trans-unit>
+      <trans-unit id="timeline.display_mode.1">
+        <target>Monate</target>
+      </trans-unit>
+      <trans-unit id="timeline.display_mode.2">
+        <target>Quartale</target>
+      </trans-unit>
+      <trans-unit id="timeline.display_mode.3">
+        <target>Jahre</target>
+      </trans-unit>
+      <trans-unit id="timeline.epochs">
+        <target>Epochen im Zeitstrahl</target>
+      </trans-unit>
+
+      <trans-unit id="epoch">
+        <target>Epoche</target>
+      </trans-unit>
+      <trans-unit id="epoch.title">
+        <target>Titel</target>
+      </trans-unit>
+      <trans-unit id="epoch.startdate">
+        <target>Startdatum der Epoche</target>
+      </trans-unit>
+      <trans-unit id="epoch.enddate">
+        <target>Enddatum der Epoche</target>
+      </trans-unit>
+      <trans-unit id="epoch.color">
+        <target>Farbe</target>
+      </trans-unit>
+      <trans-unit id="epoch.moments">
+        <target>Zeitpunkte</target>
+      </trans-unit>
+
+      <trans-unit id="moment">
+        <target>Zeitpunkt</target>
+      </trans-unit>
+      <trans-unit id="moment.title">
+        <target>Titel</target>
+      </trans-unit>
+      <trans-unit id="moment.exact_day">
+        <target>Genaues Datum des Zeitpunkts</target>
+      </trans-unit>
+      <trans-unit id="moment.description">
+        <target>Beschreibung des Zeitpunkts</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

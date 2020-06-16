@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.plugins {
+    elements {
+        tx_timeline_timeline {
+            iconIdentifier = ext-timeline-wizard-icon
+            title = LLL:EXT:timeline/Resources/Private/Language/locallang_db.xlf:pluginWizard.title
+            description = LLL:EXT:timeline/Resources/Private/Language/locallang_db.xlf:pluginWizard.description
+            tt_content_defValues {
+                CType = list
+                list_type = timeline_timeline
+            }
+        }
+    }
+}
