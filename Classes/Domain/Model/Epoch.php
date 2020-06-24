@@ -16,6 +16,11 @@ class Epoch extends AbstractEntity
     protected $title = '';
 
     /**
+     * @var string
+     */
+    protected $alternativeTitle = '';
+
+    /**
      * @var int
      */
     protected $startdate = 0;
@@ -96,5 +101,22 @@ class Epoch extends AbstractEntity
         $lastDate->setTimestamp($this->getEnddate());
 
         return (int)$lastDate->diff($firstDate)->format('%a');
+    }
+
+    /**
+     * @return string
+     */
+    public function getAlternativeTitle(): string
+    {
+        return $this->alternativeTitle;
+    }
+
+    /**
+     * @param string $alternativeTitle
+     * @return void
+     */
+    public function setAlternativeTitle(string $alternativeTitle): void
+    {
+        $this->alternativeTitle = $alternativeTitle;
     }
 }

@@ -29,7 +29,7 @@ return [
     ],
     'types' => [
         '1' => [
-            'showitem' => 'title, description, display_mode, epochs,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access, hidden, --palette--;;1, starttime, endtime',
+            'showitem' => 'epochs, title, description,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access, hidden, --palette--;;1, starttime, endtime',
         ],
     ],
     'columns' => [
@@ -141,20 +141,6 @@ return [
             'config' => [
                 'type' => 'text',
                 'enableRichtext' => true,
-            ],
-        ],
-        'display_mode' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:timeline/Resources/Private/Language/locallang_db.xlf:timeline.display_mode',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['LLL:EXT:timeline/Resources/Private/Language/locallang_db.xlf:timeline.display_mode.0', 0],
-                    ['LLL:EXT:timeline/Resources/Private/Language/locallang_db.xlf:timeline.display_mode.1', 1],
-                    ['LLL:EXT:timeline/Resources/Private/Language/locallang_db.xlf:timeline.display_mode.2', 2],
-                    ['LLL:EXT:timeline/Resources/Private/Language/locallang_db.xlf:timeline.display_mode.3', 3],
-                ],
             ],
         ],
         'epochs' => [

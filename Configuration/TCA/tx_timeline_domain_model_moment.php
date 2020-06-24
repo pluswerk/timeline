@@ -30,7 +30,7 @@ return [
     ],
     'types' => [
         '1' => [
-            'showitem' => 'title, description, exact_day,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access, hidden, --palette--;;1, starttime, endtime',
+            'showitem' => 'title, alternative_title, description, exact_day,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access, hidden, --palette--;;1, starttime, endtime',
         ],
     ],
     'columns' => [
@@ -134,6 +134,15 @@ return [
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'required,trim',
+            ],
+        ],
+        'alternative_title' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:timeline/Resources/Private/Language/locallang_db.xlf:moment.alternative_title',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim',
             ],
         ],
         'exact_day' => [

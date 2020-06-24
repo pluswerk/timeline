@@ -23,21 +23,6 @@
       <trans-unit id="timeline.description">
         <source>Description</source>
       </trans-unit>
-      <trans-unit id="timeline.display_mode">
-        <source>Display mode</source>
-      </trans-unit>
-      <trans-unit id="timeline.display_mode.0">
-        <source>Weeks</source>
-      </trans-unit>
-      <trans-unit id="timeline.display_mode.1">
-        <source>Months</source>
-      </trans-unit>
-      <trans-unit id="timeline.display_mode.2">
-        <source>Quarterly</source>
-      </trans-unit>
-      <trans-unit id="timeline.display_mode.3">
-        <source>Years</source>
-      </trans-unit>
       <trans-unit id="timeline.epochs">
         <source>Epochs</source>
       </trans-unit>
@@ -47,6 +32,9 @@
       </trans-unit>
       <trans-unit id="epoch.title">
         <source>Title</source>
+      </trans-unit>
+      <trans-unit id="epoch.alternative_title">
+        <source>Alternative title (instead of "'startyear' - 'endyear'")</source>
       </trans-unit>
       <trans-unit id="epoch.startdate">
         <source>Startdate of epoch</source>
@@ -66,6 +54,9 @@
       </trans-unit>
       <trans-unit id="moment.title">
         <source>Title</source>
+      </trans-unit>
+      <trans-unit id="moment.alternative_title">
+        <source>Alternative title (instead of the exact date)</source>
       </trans-unit>
       <trans-unit id="moment.exact_day">
         <source>Exact date of this moment</source>

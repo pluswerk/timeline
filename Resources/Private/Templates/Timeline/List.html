@@ -10,27 +10,56 @@
       <h2>{timeline.title}</h2>
       <f:format.raw>{timeline.description}</f:format.raw>
       <div class="timeline js-timeline" data-totaldaycount="{totalDayCount}">
-        <div class="timeline__epochs clr">
-          <f:for each="{timeline.epochs}" as="epoch">
-            <div class="timeline__epoch js-timeline-epoch" style="background: {epoch.color};" data-daycount="{epoch.dayCount}">
-              <f:for each="{epoch.moments}" as="moment">
-                <div class="timeline__moment-wrapper js-moment-wrapper">
-                  <div class="timeline__moment js-moment" data-dayofepoch="{moment.dayOfEpoch}"></div>
-                  <div class="timeline__tooltip js-tooltip">
-                    <p><b>{f:format.date(date: '{moment.exactDay}', format: 'd.m.Y')}</b></p>
-                    <p>{moment.title}</p>
-                    <f:format.raw>{moment.description}</f:format.raw>
+        <div class="row timeline__epochs clr">
+          <div class="col-12">
+            <f:for each="{timeline.epochs}" as="epoch">
+              <div class="timeline__epoch js-timeline-epoch" style="background: {epoch.color};" data-daycount="{epoch.dayCount}">
+                <f:for each="{epoch.moments}" as="moment">
+                  <div class="timeline__moment-wrapper js-moment-wrapper">
+                    <div class="timeline__moment js-moment" data-dayofepoch="{moment.dayOfEpoch}"></div>
+                    <div class="timeline__tooltip js-tooltip">
+                      <p><b>{f:format.date(date: '{moment.exactDay}', format: 'd.m.Y')}</b></p>
+                      <p>{moment.title}</p>
+                      <f:format.raw>{moment.description}</f:format.raw>
+                    </div>
                   </div>
+                </f:for>
+              </div>
+            </f:for>
+          </div>
+        </div>
+        <f:for each="{timeline.epochs}" as="epoch">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="timeline__legend js-timeline-legend clr" data-daycount="{epoch.dayCount}">
+                <div class="timeline__legend-color" style="background: {epoch.color};"></div>
+                <f:if condition="{epoch.alternativeTitle}">
+                  <f:then>
+                    <p class="timeline__legend-title">{epoch.title} ({epoch.alternativeTitle})</p>
+                  </f:then>
+                  <f:else>
+                    <p class="timeline__legend-title">{epoch.title} ({f:format.date(date: '{epoch.startdate}', format: 'Y')} - {f:format.date(date:
+                      '{epoch.enddate}',
+                      format: 'Y')})</p>
+                  </f:else>
+                </f:if>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <f:for each="{epoch.moments}" as="moment">
+                <div>
+                  <f:if condition="{moment.alternativeTitle}">
+                    <f:then>
+                      <p><b>{moment.alternativeTitle}</b>: {moment.title}</p>
+                    </f:then>
+                    <f:else>
+                      <p><b>{f:format.date(date: '{moment.exactDay}', format: 'd.m.Y')}</b>: {moment.title}</p>
+                    </f:else>
+                  </f:if>
+                  <f:format.raw>{moment.description}</f:format.raw>
                 </div>
               </f:for>
             </div>
-          </f:for>
-        </div>
-        <f:for each="{timeline.epochs}" as="epoch">
-          <div class="timeline__legend js-timeline-legend clr" data-daycount="{epoch.dayCount}">
-            <div class="timeline__legend-color" style="background: {epoch.color};"></div>
-            <p class="timeline__legend-title">{epoch.title} ({f:format.date(date: '{epoch.startdate}', format: 'Y')} - {f:format.date(date: '{epoch.enddate}',
-              format: 'Y')})</p>
           </div>
         </f:for>
       </div>

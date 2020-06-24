@@ -19,6 +19,11 @@ class Moment extends AbstractEntity
     protected $description = '';
 
     /**
+     * @var string
+     */
+    protected $alternativeTitle = '';
+
+    /**
      * @var int
      */
     protected $exactDay = 0;
@@ -69,5 +74,22 @@ class Moment extends AbstractEntity
     public function setDayOfEpoch(int $dayOfEpoch): void
     {
         $this->dayOfEpoch = $dayOfEpoch;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAlternativeTitle(): string
+    {
+        return $this->alternativeTitle;
+    }
+
+    /**
+     * @param string $alternativeTitle
+     * @return void
+     */
+    public function setAlternativeTitle(string $alternativeTitle): void
+    {
+        $this->alternativeTitle = $alternativeTitle;
     }
 }

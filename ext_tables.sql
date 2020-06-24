@@ -3,7 +3,6 @@ CREATE TABLE tx_timeline_domain_model_timeline (
   pid int(11) DEFAULT '0' NOT NULL,
 
   title varchar(255) DEFAULT '' NOT NULL,
-  display_mode int(11) DEFAULT '0' NOT NULL,
   description text,
   epochs int(11) DEFAULT '0' NOT NULL,
 
@@ -19,6 +18,7 @@ CREATE TABLE tx_timeline_domain_model_epoch (
   pid int(11) DEFAULT '0' NOT NULL,
 
   title varchar(255) DEFAULT '' NOT NULL,
+  alternative_title varchar(255) DEFAULT '' NOT NULL,
   startdate int(11) DEFAULT '0' NOT NULL,
   enddate int(11) DEFAULT '0' NOT NULL,
   color varchar(255) DEFAULT '' NOT NULL,
@@ -37,6 +37,7 @@ CREATE TABLE tx_timeline_domain_model_moment (
   pid int(11) DEFAULT '0' NOT NULL,
 
   title varchar(255) DEFAULT '' NOT NULL,
+  alternative_title varchar(255) DEFAULT '' NOT NULL,
   description text,
   exact_day int(11) DEFAULT '0' NOT NULL,
   epoch int(11) DEFAULT '0' NOT NULL,
